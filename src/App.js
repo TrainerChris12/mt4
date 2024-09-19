@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Nav from './components/Nav';
+import Navbar from './components/Navbar/Navbar.js';
 
 function App() {
   return (
     <div className="App">
+        <Navbar/>
       <header>
         <h1>Welcome to MT4 tutoring</h1>
       </header>
