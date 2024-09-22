@@ -12,17 +12,21 @@ function Navbar() {
         setIsNavVisible(!isNavVisible);
     };
 
+
     return (
       <nav className="navbar">
           <img src="https://placehold.co/400" alt="A placeholder Image"/>
           <ul className={`navbarLinks ${isNavVisible ? 'visible' : ''}`}>
               <li><a href="/public">Home</a></li>
-              <li><a href="/public">About</a></li>
+              <li>
+                  <a href="/public">About</a>
+
+              </li>
               <li><a href="/public">Tutors</a></li>
               <li><a href="/public">Resources</a></li>
           </ul>
 
-          <div className='hamburgerIcon' onClick={toggleNavVisibility}>
+          <div className={`hamburgerIcon ${isNavVisible ? 'toX' : ''}`} onClick={toggleNavVisibility}>
               <div className='line'></div>
               <div className='line'></div>
               <div className='line'></div>
