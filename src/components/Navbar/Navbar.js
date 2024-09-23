@@ -18,10 +18,7 @@ function Navbar() {
           <img src="https://placehold.co/400" alt="A placeholder Image"/>
           <ul className={`navbarLinks ${isNavVisible ? 'visible' : ''}`}>
               <li><a href="/public">Home</a></li>
-              <li>
-                  <a href="/public">About</a>
-
-              </li>
+              <li><a href="/public">About</a></li>
               <li><a href="/public">Tutors</a></li>
               <li><a href="/public">Resources</a></li>
           </ul>

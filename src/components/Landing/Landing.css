@@ -1,0 +1,11 @@
+h1 {
+    font-size: var(--h1-font-size);
+    text-align: center;
+    padding-top: var(--spacing-md)
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    padding-top: var(--spacing-sm);
+}

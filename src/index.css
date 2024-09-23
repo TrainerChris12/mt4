@@ -33,6 +33,7 @@ a {
   --spacing-xl: 48px;
   --spacing-xxl: 64px;
 
-  --h1-font-size: clamp(32px, 5vw, 48px); /* Min 24px, scales with 5vw, max 40px */
+  --h1-font-size: clamp(48px, 5vw, 64px); /* Min 24px, scales with 5vw, max 40px */
+  --h2-font-size: clamp(40px, 5vw, 58px);
   --p-font-size: clamp(20px, 3vw, 28px);
 }
