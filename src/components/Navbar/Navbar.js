@@ -1,6 +1,5 @@
 import React from 'react';
-import './Navbar.css'
-
+import './Navbar.css';
 
 
 
@@ -14,21 +13,23 @@ function Navbar() {
 
 
     return (
-      <nav className="navbar">
-          <img src="https://placehold.co/400" alt="A placeholder Image"/>
-          <ul className={`navbarLinks ${isNavVisible ? 'visible' : ''}`}>
-              <li><a href="/public">Home</a></li>
-              <li><a href="/public">About</a></li>
-              <li><a href="/public">Tutors</a></li>
-              <li><a href="/public">Resources</a></li>
-          </ul>
+        <nav className="navbarContainer">
+            <div className="navbar"></div>
+            <img className="websiteLogo" src="/Time2000_logo-no-background.png" alt="Time 2000 Logo"/>
+            <ul className={`navbarLinks ${isNavVisible ? 'visible' : ''}`}>
+                <li><a href="/public">Home</a></li>
+                <li><a href="/public">About</a></li>
+                <li><a href="/public">Gallery</a></li>
+                <li><a href="/public">Tutors</a></li>
+                <li><a href="/public">Resources</a></li>
+            </ul>
 
-          <div className={`hamburgerIcon ${isNavVisible ? 'toX' : ''}`} onClick={toggleNavVisibility}>
-              <div className='line'></div>
-              <div className='line'></div>
-              <div className='line'></div>
-          </div>
-      </nav>
+            <div className={`hamburgerIcon ${isNavVisible ? 'toX' : ''}`} onClick={toggleNavVisibility}>
+                <div className='line'></div>
+                <div className='line'></div>
+                <div className='line'></div>
+            </div>
+        </nav>
     );
 }
 

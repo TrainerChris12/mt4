@@ -13,8 +13,8 @@ a {
 }
 :root {
 /*  Base Colors  */
-  --base-bg-color: #38abcb;
-  --base-text-color: #023047;
+  --base-bg-color: #3783c6;
+  --base-text-color: #62a5c5;
 
   /* Accent Colors  */
   --accent-primary: #8ecae6;
@@ -34,6 +34,6 @@ a {
   --spacing-xxl: 64px;
 
   --h1-font-size: clamp(48px, 5vw, 64px); /* Min 24px, scales with 5vw, max 40px */
-  --h2-font-size: clamp(40px, 5vw, 58px);
+  --h2-font-size: clamp(32px, 5vw, 50px);
   --p-font-size: clamp(20px, 3vw, 28px);
 }
