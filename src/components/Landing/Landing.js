@@ -14,7 +14,7 @@ function Landing() {
 
     return (
         <>
-            <h2> Time 2000's </h2>
+            <h2> TIME<span className="bold2000">2000's</span> </h2>
             <h1 className="mt4Title"> MT4 Club</h1>
             <h3 className="mt4Slogan"> Today's Tutors, Tomorrow's Math Teachers </h3>
             <ImageSlider images={IMAGES} />

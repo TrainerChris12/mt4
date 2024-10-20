@@ -1,1 +1,14 @@
-
+.App{
+    position: relative;
+}
+.backgroundCircle {
+    position: absolute;
+    height: 60vh;
+    width: 90vw;
+    border-radius: 0 0 1000px 0;
+    top: 0;
+    left: -50px;
+    background-color: var(--accent-primary);
+    z-index: -1;
+    opacity: 50%;
+}

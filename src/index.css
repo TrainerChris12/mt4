@@ -14,10 +14,11 @@ a {
 :root {
 /*  Base Colors  */
   --base-bg-color: #3783c6;
-  --base-text-color: #62a5c5;
+  --base-text-color: #72b5d6;
+  --base-bg-color-2: #003f5c;
 
   /* Accent Colors  */
-  --accent-primary: #8ecae6;
+  --accent-primary: #83b3f4;
  --accent-secondary: #ffb703;
 --accent-secondary-dark: #fb8500;
 

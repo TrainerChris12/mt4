@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
 h1 {
     font-size: var(--h1-font-size);
 }
@@ -6,6 +8,14 @@ h2 {
     font-size: var(--h2-font-size);
     text-align: center;
     padding-top: var(--spacing-sm);
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    color: white;
+}
+
+.bold2000 {
+    font-weight: 800;
+    font-family: Lato, serif;
 }
 
 h3 {
@@ -14,6 +24,8 @@ h3 {
 
 .mt4Title {
     text-align: center;
+    font-family: Cambria, serif;
+    color: white;
 }
 
 .mt4Slogan {

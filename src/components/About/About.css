@@ -1,0 +1,5 @@
+.aboutSectionBackground {
+    background-color: var(--base-bg-color-2);
+    margin-top: calc(var(--spacing-xxl) * 4);
+    height: 400px;
+}
