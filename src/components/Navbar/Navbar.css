@@ -7,13 +7,14 @@
 .navbar {
     background-color: var(--base-bg-color);
     height: 100px;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin: 0 auto;
     z-index: 2;
+
 }
 
 .websiteLogo {

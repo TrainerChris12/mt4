@@ -1,36 +1,40 @@
 import PropTypes from 'prop-types';
-import {useEffect, useState} from "react";
-
+import {useState} from "react";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 export const ImageSlider = ({ images }) => {
+    const [imageIndex, setImageIndex] = useState(0);
 
-    const[currentIndex, setCurrentIndex] = useState(0);
 
-    const prevSlide = () => {
-        setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1);
-    }
+    const nextImage= () => {
+        setImageIndex(index => {
+            if (index === images.length - 1) return 0;
+            return index + 1;
+        })
+    };
 
-    const nextSlide = () => {
-        setCurrentIndex( currentIndex === images.length -1 ? 0 : currentIndex + 1);
-    }
-
-    // Automatically switch images after a set interval (e.g., every 3 seconds)
-    useEffect(() => {
-        const interval = setInterval(() => {
-            nextSlide();
-        }, 5000); // Change image every 3 seconds
-
-        // Clean up the interval on component unmount
-        return () => clearInterval(interval);
-    }, [currentIndex]);
-
+    const prevImage = () => {
+        setImageIndex(index => {
+            if (index === 0) return images.length - 1;
+            return index - 1;
+        })
+    };
 
     return (
         <div className="imageContainer">
             <div className="imageScroller">
-                <button onClick={prevSlide}></button>
-                <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
-                <button onClick={nextSlide}></button>
+                {images.map(image => (
+                    <img
+                        key={image}
+                        src={image}
+                        className="image"
+                        style={{ translate: `${-100 * imageIndex}%` }}
+                    />
+                ))}
             </div>
+            <button onClick={prevImage}></button>
+            <button onClick={nextImage}></button>
+            <FaArrowRight/>
+            <FaArrowLeft/>
         </div>
     )
 }
@@ -38,5 +42,3 @@ export const ImageSlider = ({ images }) => {
 ImageSlider.propTypes = {
     images: PropTypes.arrayOf(PropTypes.string).isRequired
 };
-
-export default ImageSlider;
