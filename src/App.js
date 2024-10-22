@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar.js';
 import Landing from "./components/Landing/Landing";
 import About from "./components/About/About";
+import Tutors from "./components/Tutors/Tutors";
 import React from "react";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
           <Navbar/>
           <Landing/>
           <About/>
+          <Tutors/>
       </div>
   );
 }

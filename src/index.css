@@ -15,11 +15,11 @@ a {
 /*  Base Colors  */
   --base-bg-color: #3783c6;
   --base-text-color: #72b5d6;
-  --base-bg-color-2: #003f5c;
+  --base-bg-color-2: #084360;
 
   /* Accent Colors  */
   --accent-primary: #83b3f4;
- --accent-secondary: #ffb703;
+ --accent-secondary: #f1c151;
 --accent-secondary-dark: #fb8500;
 
 /*  Borders  */
@@ -36,5 +36,6 @@ a {
 
   --h1-font-size: clamp(48px, 5vw, 64px); /* Min 24px, scales with 5vw, max 40px */
   --h2-font-size: clamp(32px, 5vw, 50px);
+  --h3-font-size: clamp(24px, 5vw, 42px);
   --p-font-size: clamp(20px, 3vw, 28px);
 }

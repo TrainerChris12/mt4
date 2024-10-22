@@ -1,0 +1,17 @@
+.tutorsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    margin: 0 20px;
+}
+
+.tutorBox {
+    width: 200px;
+    height: 200px;
+    background-color: darkgrey;
+    border-radius: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+}
